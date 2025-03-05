@@ -1,0 +1,8 @@
+An algorithm is more general and is a step-by-step process based on specific and organized instructions that takes inputs, processes them, and then produces outputs.
+
+One of the most important characteristics that an algorithm must have is that it is correct, clear, and has an end.
+ 
+Algorithms are solved using 
+1. pseudocode 
+2. flowchart 
+3. programming language
