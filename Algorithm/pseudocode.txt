@@ -1,0 +1,7 @@
+Writing the algorithm by pseudocode: 
+⦁	Understand and clearly define 
+the problem before writing pseudocode.
+⦁	Use clear, concise language that accurately 
+describes the steps of the algorithm.
+⦁	writing in a logical order
+⦁	Review and revision
