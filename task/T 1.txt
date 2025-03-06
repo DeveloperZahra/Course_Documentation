@@ -1,0 +1,12 @@
+start 
+display "Reverse the string"
+display "enter the string to reverse it"
+prompt user for za
+read za
+for (X=0 to (za[x] not=to null))step x=x+1
+endfor 
+display"reverse of the string is"
+for((x=x-1 to (x>=()) step i=i+1
+display za[x]
+endfor
+end 
