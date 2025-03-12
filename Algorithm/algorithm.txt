@@ -1,0 +1,104 @@
+An algorithm is more general and is a step-by-step process based on specific and organized instructions that takes inputs, processes them, and then produces outputs.
+
+One of the most important characteristics that an algorithm must have is that it is correct, clear, and has an end.
+
+An algorithm is a step-by-step procedure to solve a problem or perform a task.
+
+* Characteristics of a Good Algorithm:
+
+Correctness – It should solve the problem correctly.
+Efficiency – It should run in a reasonable amount of time.
+Clarity – Easy to understand and implement.
+Finiteness – It must have an end.
+Generality – It should work for multiple inputs. 
+
+* Algorithms are solved using:
+ 
+1. pseudocode 
+2. flowchart 
+3. programming language
+-----------------------------
+
+* How do algorithms work?
+
+Algorithms work by following a set of instructions or rules to complete a task or solve a problem. 
+They can be expressed as natural languages, programming languages, pseudocode, flowcharts and control tables.
+ Natural language expressions are rare, as they are more ambiguous. 
+Programming languages are normally used for expressing algorithms executed by a computer.
+
+---------------------
+* How to Design an Algorithm?
+To write an algorithm, the following things are needed as a pre-requisite: 
+
+1. The problem that is to be solved by this algorithm i.e. clear problem definition.
+2. The constraints of the problem must be considered while solving the problem.
+3. The input to be taken to solve the problem.
+4. The output is to be expected when the problem is solved.
+5. The solution to this problem is within the given constraints.
+
+Then the algorithm is written with the help of the above parameters such that it solves the problem.
+
+Example: Consider the example to add three numbers and print the sum.
+
+Step 1: Fulfilling the pre-requisites:
+1. Add 3 numbers and print their sum.
+2. he numbers must contain only digits and no other characters.
+3. The three numbers to be added.
+4. The sum of the three numbers taken as the input i.e. a single integer value.
+5. The solution consists of adding the 3 numbers. It can be done with the help of the ‘+’ operator, or bit-wise, or any other method.
+
+Step 2: Designing the algorithm:
+
+1. Start.
+2. Input the three numbers (let's call them a, b, and c).
+3. Calculate the sum: sum = a + b + c.
+4. Output the value of sum.
+5. End.
+
+Step 3: Testing the algorithm by implementing it: 
+* program:
+
+ # code to add three numbers:
+
+# Input three numbers from the user
+a = float(input("Enter first number: "))
+b = float(input("Enter second number: "))
+c = float(input("Enter third number: "))
+
+# Calculate the sum
+sum_of_numbers = a + b + c
+
+# Output the sum
+print("The sum of the three numbers is:", sum_of_numbers)
+
+* Output:
+
+Enter first number: 5
+Enter second number: 10
+Enter third number: 15
+The sum of the three numbers is: 30.0
+
+-------------------------------------------
+
+*Types of Algorithms:
+
+1. Sequential Algorithm (Step-by-step Execution)
+2. Iterative Algorithm (Using Loops)
+3. Recursive Algorithm (Function Calls Itself)
+
+*Algorithm Components: 
+
+1. Variables : used to store values
+2. Input and Output statements : used to get and display data
+3. Conditional Statements (Decision Making): used to make Decision
+4. Loops (Iteration) : used to repetition
+5. Functions (Procedures) : used to code reuse
+6. Arrays and Lists : used to store many values in same variable
+
+-----------------------
+ 
+
+
+
+
+
