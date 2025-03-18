@@ -1,0 +1,11 @@
+* sort the students marks from highest to lowest: PesudoCode:-
+
+1. input : list of marks
+2. len_marks is length of marks list
+3. for i from 0 to len_marks -1
+4. fOR j FROM 0 TO len_marks-i-2
+5. if IF marks[j] < marks[j+1] THEN
+6. SWAP marks[j] WITH marks[j+1]
+7. end for
+8. end for
+9. return marks

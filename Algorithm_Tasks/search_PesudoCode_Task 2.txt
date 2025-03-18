@@ -1,0 +1,13 @@
+* search in list of student marks for the highest one: PesudoCode:-
+
+
+1. start
+2. int name 'student'
+3. int variable
+4. highestMark to the first element of 'student'
+5. for each mark in 'student' from the secound element to the list
+6. if mark > highestMark 
+7. set highestMark to mark 
+8. set overallaverage to totalmark/number of student
+9. print "the student highest mark scored" ,highestMark 
+10. end   

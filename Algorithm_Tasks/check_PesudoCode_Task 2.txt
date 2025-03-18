@@ -1,0 +1,12 @@
+* check if number is palindrome ( ex: 3443 is palindrome , 56 is not palindrome , 454 is palindrome ): PesudoCode:-
+
+1. input number
+2. originalNum = number
+3. reversedNum = new list
+4. FOR i FROM LENGTH(number) - 1 TO 0
+5. add number[i] to reversedNum list
+6. end for
+7. if originalNum ==reversedNum
+8. return palindrome
+9. else return not palindrome
+

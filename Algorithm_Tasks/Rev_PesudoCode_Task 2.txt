@@ -1,0 +1,14 @@
+* reverse a string : PesudoCode:-
+
+1. start 
+2. display "Reverse the string"
+3. display "enter the string to reverse it"
+4. prompt user for za
+5. read za
+6. for (X=0 to (za[x] not=to null))step x=x+1
+7. end for 
+8. display "reverse of the string is"
+9. for((x=x-1 to (x>=()) step i=i+1
+10. display za[x]
+11. end for
+12. end 
