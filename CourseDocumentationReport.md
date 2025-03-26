@@ -2,7 +2,7 @@
 Software development life cycle (SDLC) is a structured process that is used to design, develop, and test good-quality software.
 SDLC, or software development life cycle, is a methodology that defines the entire procedure of software development step-by-step. 
 The goal of the SDLC life cycle model is to deliver high-quality, maintainable software that meets the user’s requirements.
-* There are 6 faces for SDLC:
+>* _**There are 6 faces for SDLC:**_
 1. **analysis** 
 2. **design** 
 3. **developme0nt** 
@@ -10,7 +10,7 @@ The goal of the SDLC life cycle model is to deliver high-quality, maintainable s
 5. **deployment** 
 6. **maintenance**
 
-* There are several functions that fall under it:  
+>* _**There are several functions that fall under it:**_
 
 1. **__Users:__** in Entire Operations, a user ID can be used to enter the system. Several users can log on to Entire Operations with the same user ID and password at the same time. 
 For reasons of data security and in order to trace data modifications, however, each user usually has a personal user ID and password. 
@@ -47,7 +47,7 @@ Git is a distributed version control system, meaning that it allows developers t
 Git helps manage and track changes to code, but it does so in a decentralized way
 This design makes Git fast, scalable, and highly resilient to issues like server failures
 
-* _**Key Features of Git:**__
+>* _**Key Features of Git:**__
 1. **_Version Tracking:_** Git follows all adjustments done in one record, letting you revert to old releases without trouble.
 2. **_Collaboration:_** Different programmers can work on a similar task at the same time without clash.
 Branching: You have the option to create distinct branches for new attributes, bug repairs or tests.
@@ -59,7 +59,7 @@ which makes understanding how a project has evolved over time much easier.
 
 !{image}(https://files.slack.com/files-pri/T08EFTFHWSK-F08GDK24NBA/git_commands2.png)
 
-* **_There four main stages in using git as the following:_**
+>* **_There four main stages in using git as the following:_**
 
 1. **__Working Directory:__** It’s the workspace where the code can be modified and change without any restrictions.
 
@@ -67,7 +67,7 @@ which makes understanding how a project has evolved over time much easier.
 3. *__Local repo:__* It’s the space where the codes are saved as a new copy of the project and be ready to push to the remote repo.
 4. *__Remote Repo:__* It’s a remote space where the main project is stored so that all team members can share their work with the rest of the team and get the latest update from the project.
 
-⦁**THE CLOUD REPOSITORIES THAT USE GIT VERSION CONTROL:**
+>⦁ **THE CLOUD REPOSITORIES THAT USE GIT VERSION CONTROL:**
 
 ![image](https://lh4.googleusercontent.com/-MgrAPEm_n7eH-Ejcptx4n6YD2CAb8rdIfjJnRL7vhGK6ik8FdKRoXw_QNzWyB5KOoXS_1J9fHoCQVDQvIj62FFII-7m8IkNFDLNwV7QAR9UdcycdpsmtWvSBWyKjzvhnJ1lSBg0)
 
@@ -84,6 +84,42 @@ Analytics	|Yes |	No | 	Yes
 
 
 ------------------------------------------------------
+## **__4. Algorithm design ( Pseudo code and flowchart ):__**
+An algorithm is more general and is a step-by-step process based on specific and organized instructions that takes inputs, processes them, and then produces outputs.
+One of the most important characteristics that an algorithm must have is that it is correct, clear, and has an end.
+An algorithm is a step-by-step procedure to solve a problem or perform a task.
+
+> *  _**Characteristics of a Good Algorithm:**_
+
+1. **__Correctness:__** It should solve the problem correctly.
+2. **__Efficiency:__**  It should run in a reasonable amount of time.
+3. **__Clarity:__**  Easy to understand and implement.
+4. **__Finiteness:__** It must have an end.
+5. **__Generality:__** It should work for multiple inputs. 
+
+> * _**Algorithms are solved using:**_
+ 
+1. pseudocode 
+2. flowchart 
+3. programming language
+
+
+> * _**Types of Algorithms:**_
+
+1. Sequential Algorithm (Step-by-step Execution)
+2. Iterative Algorithm (Using Loops)
+3. Recursive Algorithm (Function Calls Itself)
+
+> * _**Algorithm Components:**_
+
+1. *__Variables:__* used to store values
+2. *__Input and Output statements:__* used to get and display data
+3. *__Conditional Statements (Decision Making):__* used to make Decision
+4. *__Loops (Iteration):__* used to repetition
+5. **__Functions (Procedures):__** used to code reuse
+6. *__Arrays and Lists:__* used to store many values in same variable
+
+
 
 
 
