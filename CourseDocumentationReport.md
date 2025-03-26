@@ -35,12 +35,6 @@ also  agile project management framework that helps teams structure and manage t
 
 ![image](https://www.notifyvisitors.com/pb/wp-content/uploads/2020/12/agile-vs-scrum-banner-1024x341-2-1.webp)
 ________________________________________________
-## Full stack .Net web development course components and tools:
-!{image}(https://files.slack.com/files-pri/T08EFTFHWSK-F08F1Q6UZML/img_5748.jpg)
-
-![image](https://cdn.educba.com/academy/wp-content/uploads/2019/09/Fornt-End-VS-Back-End.png)
-
---------------------------------------------
 ## **__3.Git Version Control:__**
 
 Git is a distributed version control system, meaning that it allows developers to work on their own local copies of a project
@@ -118,6 +112,46 @@ An algorithm is a step-by-step procedure to solve a problem or perform a task.
 4. *__Loops (Iteration):__* used to repetition
 5. **__Functions (Procedures):__** used to code reuse
 6. *__Arrays and Lists:__* used to store many values in same variable
+
+>* __**reverse a string:(PesudoCode)**__
+
+1. start 
+2. display "Reverse the string"
+3. display "enter the string to reverse it"
+4. prompt user for za
+5. read za
+6. for (X=0 to (za[x] not=to null))step x=x+1
+7. end for 
+8. display "reverse of the string is"
+9. for((x=x-1 to (x>=()) step i=i+1
+10. display za[x]
+11. end for
+12. end 
+	
+* **__FlowChart__**
+
+![image](https://media.geeksforgeeks.org/wp-content/uploads/flowchart-to-find-reverse-of-a-number.jpg)
+-------------------------------------------------------
+## **__5. Web Development Stacks:__**
+
+A web development stack is a combination of tools and technologies 
+used to create websites or web applications
+
+>* *__Full stack .Net web development course components and tools:__*
+	
+!{image}(https://files.slack.com/files-pri/T08EFTFHWSK-F08F1Q6UZML/img_5748.jpg)
+
+![image](https://cdn.educba.com/academy/wp-content/uploads/2019/09/Fornt-End-VS-Back-End.png)
+
+
+
+
+
+
+
+
+
+
 
 
 
