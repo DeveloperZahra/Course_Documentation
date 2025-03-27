@@ -143,6 +143,55 @@ used to create websites or web applications
 
 ![image](https://cdn.educba.com/academy/wp-content/uploads/2019/09/Fornt-End-VS-Back-End.png)
 
+Full stack development is the process of developing both the frontend and backend of 
+applications. Any application has a frontend (user-facing) component and a backend 
+(database and logic) component. The frontend contains the user interface and code 
+related to user interactions with the application. The backend contains all the code 
+required for the application to run, including integrations with data systems, communicating with other
+applications, and processing data.
+
+------------------------------------------------
+## *__6. Programming Paradigms:__*
+![image](https://miro.medium.com/v2/resize:fit:1100/format:webp/1*sH3laAdBV74SCHWGRzjVIg.jpeg)
+
+A programming paradigm is a fundamental approach or style of programming that provides
+a set of principles, concepts, and techniques for designing and implementing computer
+programs. It defines the structure, organization, and flow of the code, as well as the
+methodologies for problem-solving and expressing computations.
+
+>* _**Here are to some popular programming paradigms:**_
+	
+	1. Procedural Programming
+	2. Object-Oriented Programming (OOP)
+	3. Functional Programming (FP)
+	4. Declarative Programming
+	5. Event-Driven Programming
+	6. Concurrent Programming
+
+
+![image](https://www.computersciencedegreehub.com/wp-content/uploads/2021/03/Brief-History-of-Programming-Languages.jpg)
+
+-------------------------------------------------
+## *__7. Algorithm programming components:__*
+10 important items that should be in the algorithm are listed. These features that should be in 
+the algorithm; Clarity, Input, Output, Accuracy, Efficiency, Configuration, 
+Processing Time, Memory Usage, Splitting into subproblems, Reusability.
+
+   1.*__Clarity:__* The algorithm should state the steps to be performed step by step in a clear and understandable way.
+
+   2. *__Input:__* The algorithm must specify what type of data to use as input and how to get that data.
+   3. *__Output:__* The algorithm must specify what kind of output will be obtained as a result of the operation and how this output will be presented.
+   4.* __Accuracy:__* The algorithm must fully and accurately describe the operations required to produce the correct results.
+   5. *__Efficiency:__* The working of the algorithm should be designed to solve the given problem as soon as possible.
+   6. *__Configuration:__* The algorithm should have a structure that follows step-by-step processes from a starting point.
+   7. *__Processing time:__* The algorithm must specify how much time is needed to process the given inputs.
+   8. *__Memory usage:__* The algorithm must specify how much memory the data will use and whether this memory usage is sufficient.
+   9. *__Splitting into subproblems:__* The algorithm should make large problems easier to solve by dividing them into smaller subproblems.
+   10. *__Reusability:__* The algorithm should be reusable for similar problems.
+
+   ![image](https://miro.medium.com/v2/resize:fit:640/format:webp/0*H_GPo7_245Uivk77.gif)
+   -------------------------------------------------
+   ## _*8.Types of programming languages ( based on machine interaction, execution )*_
 
 
 
