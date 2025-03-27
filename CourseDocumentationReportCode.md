@@ -251,8 +251,361 @@ Operator|	Name|	Description|	Example
 -----------------------------------
 ## _*12. Conditional statements ( if else / switch case )*_
 
+> C# supports the usual logical conditions from mathematics:
+
+* _Less than:_ a < b
+* _Less than or equal to:_ a <= b
+* _Greater than:_ a > b
+* _Greater than or equal to:_ a >= b
+* _Equal to:_ a == b
+* _Not Equal to:_ a != b
+
+You can use these conditions to perform different actions for different decisions.
+
+> C# has the following conditional statements:
+
+* Use if to specify a block of code to be executed, if a specified condition is true
+* Use else to specify a block of code to be executed, if the same condition is false
+* Use else if to specify a new condition to test, if the first condition is false
+* Use switch to specify many alternative blocks of code to be executed
+
+>* Example 1:
+
+    // Use of goto in switch statement 
+     using System; 
+
+     public class Geeks 
+    { 
+	// Main Method 
+	public static void Main(String[] args) 
+	{ 
+		int greeting = 2; 
+
+		switch (greeting) { 
+		case 1: 
+			Console.WriteLine("Hello"); 
+			goto default; 
+		case 2: 
+			Console.WriteLine("Bonjour"); 
+			goto case 3; 
+		case 3: 
+			Console.WriteLine("Namaste"); 
+			goto default; 
+		default: 
+			Console.WriteLine("Entered value is: " + greeting); 
+			break; 
+		} 
+	} 
+    } 
+
+>*  Output:
+  
+    Bonjour
+    Namaste
+    Entered value is: 2
+
+>* Example:
+ 
+     using System;
+
+     namespace MyApplication
+     {
+    class Program
+    {
+    static void Main(string[] args)
+    {
+      int time = 22;
+      if (time < 10) 
+      {
+        Console.WriteLine("Good morning.");
+      } 
+      else if (time < 20) 
+      {
+        Console.WriteLine("Good day.");
+      } 
+      else 
+      {
+        Console.WriteLine("Good evening.");
+      }
+    }
+    }
+    }
+>*  Output:
+  
+    Good evening.
+---------------------------
+## _*13. Looping ( for, while and do while ):*_
+> Loops:
+
+Loops can execute a block of code as long as a specified condition is reached.
+Loops are handy because they save time, reduce errors, and they make code more readable.
+
+> While Loop: 
+
+The while loop loops through a block of code as long as a specified condition is True
+
+>* Example:
+ 
+    using System;
+
+    namespace MyApplication
+     {
+    class Program
+    {
+    static void Main(string[] args)
+    {
+      int i = 0;
+      while (i < 5) 
+      {
+        Console.WriteLine(i);
+        i++;
+      }
+    }
+    }
+    }
+>* Output:
+ 
+       0
+       1
+       2
+       3
+       4
+> The Do/While Loop:
+
+The do/while loop is a variant of the while loop.
+This loop will execute the code block once, before checking if the condition is true, 
+then it will repeat the loop as long as the condition is true.
+
+>* Example:
+ 
+     using System;
+
+    namespace MyApplication
+    {
+    class Program
+    {
+    static void Main(string[] args)
+    {
+      int i = 0;
+      do 
+      {
+        Console.WriteLine(i);
+        i++;
+      }
+      while (i < 5);
+    }
+    }
+    }
+>*  Output:
+  
+     0
+     1
+     2
+     3
+     4
+> For Loop:
+ 
+When you know exactly how many times you want to loop through a block of code, use the for loop instead of a while loop
+
+>* Example:
+
+    using System;
+
+    namespace MyApplication
+     {
+    class Program
+    {
+    static void Main(string[] args)
+    {
+      for (int i = 0; i < 5; i++) 
+      {
+        Console.WriteLine(i);
+      }    
+    }
+    }
+    }
+>* Output:
+ 
+    0
+    1
+    2
+    3
+    4
+------------------------------------
+## __*14. Nested operations ( nested conditions and nested looping ):*__
+
+> Nested loops:
+
+are those loops that are present inside another loop. 
+In C#, nesting of for, while, and do-while loops are allowed and you can also put any nested
+loop inside any other type of loop like in a for loop you are allowed to put nested if loop.
+
+* for Loop: The functionality of for loop is quite similar to while loop.
+It is basically used when the number of times loop statements are to be executed is known beforehand.
+Nesting of for loop is allowed, which means you can use for loop inside another for loop.
+ 
+ >* Example:
+  
+    // C# program to illustrate nested for loop 
+    using System; 
+
+    class GFG{ 
+	
+    public static void Main() 
+    { 
+	
+	// for loop within another for loop 
+	// printing GeeksforGeeks 
+	for(int i = 0; i < 4; i++) 
+		for(int j = 1; j < i; j++) 
+			Console.WriteLine("GeeksforGeeks!!"); 
+     } 
+     }
+  >* Output:
+   
+    GeeksforGeeks!!
+    GeeksforGeeks!!
+    GeeksforGeeks!!
+* while Loop:In a while loop, the test condition is given at the beginning of the loop, and all statements are executed till
+the given boolean condition satisfies and when the condition becomes false, the control will be out from the while loop.
+Nesting of a while loop is allowed, which means you can use while loop inside another while loop.
+However, it is not recommended to use nested while loop because it is difficult to maintain and debug.
+
+ >* Example:
+  
+        // C# program to illustrate nested while loop 
+       using System; 
+
+     class GFG{ 
+	
+     public static void Main() 
+    { 
+	int x = 1, y = 2; 
+	
+	while (x < 4) 
+	{ 
+		Console.WriteLine("Outer loop = {0}", x); 
+		x++; 
+	
+		while (y < 4) 
+		{ 
+			Console.WriteLine("Inner loop = {0}", y); 
+			y++; 
+		} 
+	} 
+    } 
+    }
+>* Output:
+ 
+    Outer loop = 1
+    Inner loop = 2
+    Inner loop = 3
+    Outer loop = 2
+    Outer loop = 3
+* do-while Loop: In C#, the do-while loop is similar to the while loop with the only
+difference that is, it checks the condition after executing the statements.
+Nesting of a do-while loop is allowed, which means you can use a do-while loop inside another do-while loop.
+>* Example:
+
+      // C# program to illustrate nested do-while loop 
+     using System; 
+
+     class GFG{ 
+	
+    public static void Main() 
+    { 
+	int x = 1; 
+	do
+	{ 
+		Console.WriteLine("Outer loop = {0}", x); 
+		int y = x; 
+	
+		x++; 
+				
+		do
+		{ 
+			Console.WriteLine("Inner loop: {0}", y); 
+			y++; 
+		} while (y < 4); 
+
+	} while (x < 4); 
+    } 
+    }
+>* Output:
+ 
+    Outer loop = 1
+    Inner loop: 1
+    Inner loop: 2
+    Inner loop: 3
+    Outer loop = 2
+    Inner loop: 2
+    Inner loop: 3
+    Outer loop = 3
+    Inner loop: 3
+*  If Statement: The if statement checks the given condition.
+   If the condition evaluates to be true then the block of code/statements will execute otherwise not. 
+  
+   >* Example:
+
+        // Using if statement
+        using System;
+
+        public class Geeks 
+       {
+	   public static void Main(string[] args)
+	   {
+		string name = "Geek";
+      
+      	// Using if statement
+		if (name == "Geek") {
+			Console.WriteLine("GeeksForGeeks");
+		}
+	   }
+       }
+ >* Output:
+  
+    GeeksForGeeks
+* If-else Statement:The if statement evaluates the code if the condition is true but
+ what if the condition is not true, here comes the else statement.
+It tells the code what to do when the if condition is false.
+
+>* Example:
+ 
+      // Using if-else statement
+     using System;
+
+    public class Geeks 
+    {
+	public static void Main(string[] args)
+	{
+		string name = "Geek";
+      
+      	// Using if-else statement
+		if (name == "Geeks") {
+			Console.WriteLine("GeeksForGeeksr");
+		}
+		else {
+			Console.WriteLine("Geeks");
+		}
+	}
+    }
+   >* Output:
+    
+    Geeks
+---------------------------------------
+## _*15. Array data structure*_
+
+An array is a group of like-typed variables that are referred to by a common name.
+And each data item is called an element of the array.
+The data types of the elements may be any valid data type like char, int, float, etc. and the elements are stored in a contiguous location. 
+Length of the array specifies the number of elements present in the array.
+
+The following figure shows how array stores values sequentially:
+![image](https://media.geeksforgeeks.org/wp-content/uploads/20250109152710671116/Array-660.webp)
 
 
+
+  
 
 
     
