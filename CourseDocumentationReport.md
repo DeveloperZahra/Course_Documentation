@@ -192,7 +192,92 @@ Processing Time, Memory Usage, Splitting into subproblems, Reusability.
    ![image](https://miro.medium.com/v2/resize:fit:640/format:webp/0*H_GPo7_245Uivk77.gif)
    -------------------------------------------------
    ## _*8.Types of programming languages ( based on machine interaction, execution )*_
+   > *__1.  Procedural programming languages:__*
+	
+A procedural language follows a sequence of statements or commands in order to achieve a desired output. Each series of steps is called
+a procedure, and a program written in one of these languages will have one or more procedures within it. 
+Common examples of procedural languages include:
+       
+	   *C and C++        *Java
+	   *Pascal           *BASIC 
 
+> *__2. Functional programming languages__* 
+
+Rather than focusing on the execution of statements, functional languages focus
+on the output of mathematical functions and evaluations. Each function–a reusable 
+module of code–performs a specific task and returns a result. 
+The result will vary depending on what data you input into the function. 
+Some popular functional programming languages include:
+
+            *Scala          *Erlang
+		*Haskell        * Elixir
+
+> *_3. Front-end & back_end languages:_*
+
+* Front-end languages are primarily concerned with the ‘user’ aspect
+of the software. The front end deals with all of the text, colors, 
+buttons, images, and navigation that the user will face when navigating 
+your website or application. Anyone with a background in graphic design 
+or art may be more inspired to begin learning one of the front-end languages. 
+
+Some examples of front-end programming languages include:
+     
+	 *HTML           *CSS 
+
+	 *JavaScript     *React 
+* Back-end languages deal with storage and manipulation of the server 
+ side of software. This is the part of the software that the user does
+ not directly come into contact with but supports their experience behind 
+ the scenes. This includes data architecture, scripting, and communication
+ between applications and underlying databases. 
+ Anyone with experience in mathematics or engineering may
+find more interest in back-end development.
+
+Some examples of back-end programming languages include:
+
+         *JavaScript   *PHP
+	     *Java         *Python
+	     *Ruby         *C#
+
+----------------------------------
+## _*9. Comparison of compiler and interpreter:*_
+
+Interpreter| Compiler
+-----------|-----------
+Translates program one statement at a time.| Scans the entire program and translates it as a whole into machine code.
+Interpreters usually take less amount of time to analyze the source code. However, the overall execution time is comparatively slower than compilers.| Compilers usually take a large amount of time to analyze the source code. However, the overall execution time is comparatively faster than interpreters.
+No Object Code is generated, hence are memory efficient.| Generates Object Code which further requires linking, hence requires more memory.
+Programming languages like JavaScript, Python, Ruby use interpreters.| Programming languages like C, C++, Java use compilers.
+
+> * Working of Compiler and Interpreter
+	
+![image](https://cdn.programiz.com/sites/tutorial2program/files/compiler-interpreter-working.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
 
 
 
