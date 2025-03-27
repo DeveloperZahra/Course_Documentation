@@ -602,11 +602,332 @@ Length of the array specifies the number of elements present in the array.
 
 The following figure shows how array stores values sequentially:
 ![image](https://media.geeksforgeeks.org/wp-content/uploads/20250109152710671116/Array-660.webp)
+> Explanation:
+
+The index is starting from 0, which stores value. we can also store a fixed number of values in an array.
+Array index is to be increased by 1 in sequence whenever its not reach the array size.
+
+>* Array Declaration
+
+* Syntax:
+
+      <Data Type>[ ] <Name_Array>
+* The meaning of each one of them:
+
+1.     <Data Type> : It define the element type of the array.
+2.     [ ] : It define the size of the array.
+3.     <Name_Array> : It is the Name of array. 
 
 
 
+* Note : Only Declaration of an array doesn’t allocate memory to the array. For that array must be initialized.
+
+
+>* Array Initialization:
+ 
+As said earlier, an array is a reference type so the new keyword used to create an
+instance of the array. We can assign initialize individual array elements, with the help of the index. 
+
+* Syntax:
+
+      type [ ] < Name_Array > = new < datatype > [size];
+
+Here,
+
+1. type specifies the type of data being allocated
+2. size specifies the number of elements in the array
+3.  Name_Array is the name of an array variable.
+4. new will allocate memory to an array according to its size. 
+
+*Example:
+
+      // Accessing array elements using different loops
+      using System;
+	
+     class Geeks 
+     {
+	// Main Method
+	public static void Main()
+	{
+		// declares an Array of integers.
+		int[] intArray;
+
+		// allocating memory for 5 integers.
+		intArray = new int[5];
+
+		// initialize the first elements
+		// of the array
+		intArray[0] = 10;
+
+		// initialize the second elements
+		// of the array
+		intArray[1] = 20;
+
+		// so on...
+		intArray[2] = 30;
+		intArray[3] = 40;
+		intArray[4] = 50;
+
+		// accessing the elements
+		// using for loop
+		Console.Write("For loop :");
+		for (int i = 0; i < intArray.Length; i++)
+			Console.Write(" " + intArray[i]);
+
+		Console.WriteLine("");
+		Console.Write("For-each loop :");
+		
+		// using for-each loop
+		foreach(int i in intArray)
+			Console.Write(" " + i);
+
+		Console.WriteLine("");
+		Console.Write("while loop :");
+		
+		// using while loop
+		int j = 0;
+		while (j < intArray.Length) {
+			Console.Write(" " + intArray[j]);
+			j++;
+		}
+
+		Console.WriteLine("");
+		Console.Write("Do-while loop :");
+		
+		// using do-while loop
+		int k = 0;
+		do
+		{
+			Console.Write(" " + intArray[k]);
+			k++;
+		} while (k < intArray.Length);
+	}
+     }
+* Output:
+
+      For loop : 10 20 30 40 50
+      For-each loop : 10 20 30 40 50
+      while loop : 10 20 30 40 50
+      Do-while loop : 10 20 30 40 50
+----------------------------------------------
+## _*16. Functions in CSharp ( built-in ):*_
+> Built-in Functions:
+
+These functions are available by .Net Framework to perform common tasks, ranging from 
+mathematical operations to string manipulation, array handling, and more.
+> 1. Math Functions: 
   
+The Math class provides various mathematical functions.
 
+• Math.Abs: Returns the absolute value of a number.
 
-    
+        int value = -10; 
+        int absoluteValue = Math.Abs(value); // absoluteValue = 10 
+• Math.Pow: Raises a number to a specified power. 
+
+        double result = Math.Pow(2, 3); // result = 8 
+• Math.Sqrt: Returns the square root of a number. 
+
+       double squareRoot = Math.Sqrt(16); // squareRoot = 4 
+* Math.Round:  a floating-point number to the nearest integer or specified number of decimal places. 
+
+               double rounded = Math.Round(4.56789, 2); // rounded = 4.57
+> 2. String Functions:
+  
+  The String class provides methods to manipulate strings. 
+
+  • string.Length: Gets the length of a string. 
+
+      string message = "Hello, world!"; 
+    int length = message.Length; // length = 13 
+* string.ToUpper and string.ToLower: Convert a string to uppercase or lowercase.
+
+        string upper = message.ToUpper(); // upper = "HELLO, WORLD!" 
+        string lower = message.ToLower(); // lower = "hello, world!"
+* string.Contains: Determines whether a string contains a specified substring. 
+
+           bool contains = message.Contains("world"); // contains = true 
+• string.Split: Splits a string into an array of substrings based on a delimiter.
+
+           string[] words = message.Split(' '); // words = ["Hello,", "world!"] 
+
+> 3. Date and Time Functions:
+  
+The DateTime class provides functions to work with dates and times.
+   * DateTime.Now: Gets the current date and time. 
+   
+                  DateTime now = DateTime.Now; 
+• DateTime.Today: Gets the current date with the time component set to 00:00:00.
+
+                  DateTime today = DateTime.Today
+* DateTime.ToString: Converts the date and time to a string in a specified format. 
+
+       string formattedDate = now.ToString("yyyy-MM-dd HH:mm:ss"); // formattedDate = "2024-08-18 
+       15:30:00" 
+>  4. Array Functions:
+   
+   C# arrays have several built-in methods. 
+
+• Array.Sort: Sorts the elements of an array. 
+
+              int[] numbers = { 3, 1, 4, 1, 5 }; 
+               Array.Sort(numbers); // numbers = { 1, 1, 3, 4, 5 } 
+• Array.Reverse: Reverses the sequence of the elements in an array. 
+
+              Array.Reverse(numbers); // numbers = { 5, 4, 3, 1, 1 } 
+• Array.IndexOf: Searches for the specified object and returns the index of its first occurrence 
+in an array. 
+
+           int index = Array.IndexOf(numbers, 4); // index = 1
+> 5. Console Functions:
+  
+The Console class is used for basic input/output operations. 
+
+• Console.WriteLine: Writes the specified data, followed by the current line terminator, to the 
+console. 
+
+           Console.WriteLine("Hello, world!"); 
+• Console.Write: Writes the specified data to the console without appending a new line.
+
+            Console.Write("Enter your name: "); 
+• Console.ReadLine: Reads the next line of characters from the standard input stream. 
+
+            string name = Console.ReadLine();
+> 6. Type Conversion Functions:
+  
+C# provides several built-in methods for converting between types. 
+
+• Convert.ToInt32: Converts a specified value to a 32-bit signed integer. 
+
+           string numberString = "123"; 
+           int number = Convert.ToInt32(numberString); // number = 123 
+• Convert.ToDouble: Converts a specified value to a double-precision floating-point number. 
+
+              string doubleString = "123.45"; 
+              double doubleNumber = Convert.ToDouble(doubleString); // doubleNumber = 123.45 
+ 
+• Convert.ToString: Converts a specified value to a string. 
+
+               int num = 123; 
+         string numString = Convert.ToString(num); // numString = "123" 
+• int.Parse and int.TryParse: Convert a string representation of a number to its integer 
+equivalent. 
+
+             int parsedNumber = int.Parse("456"); // parsedNumber = 456 
+             bool success = int.TryParse("456"); // success = true
+> 8. Random Number Functions:
+  
+The Random class is used to generate random numbers.
+
+• Random.Next: Returns a random integer. 
+
+          Random random = new Random(); 
+            int randomNumber = random.Next(); // randomNumber = any integer 
+            int randomInRange = random.Next(1, 10); // randomInRange = integer between 1 and 9 
+• Random.NextDouble: Returns a random floating-point number between 0.0 and 1.0 
+
+           double randomDouble = random.NextDouble(); // randomDouble = value between 0.0 and 1.0
+-----------------------------------------------
+## _*17. Errors in programming:*_
+In programming, errors can generally be categorized into three main types: syntax errors, runtime 
+errors, and logical errors. Understanding these error types is crucial for effective debugging and 
+writing robust code. Let's explore each type with examples and how to handle them in C#. 
+ 
+> 1. Syntax Errors:
+  
+Syntax errors occur when the code violates the grammatical rules of the programming language. 
+These errors are usually detected by the compiler before the program runs.
+
+> 2. Runtime Errors:
+  
+Runtime errors occur while the program is running, usually because of operations that are not 
+logically valid at runtime, such as dividing by zero, accessing an array out of bounds, or attempting 
+to use a null reference.
+> 3.  Logical Errors:
+   
+Logical errors occur when the program compiles and runs, but the output is not what you expected. 
+These errors are the most difficult to detect because the program doesn't crash or show any 
+immediate signs of error.
+
+>* Example 1:
+ 
+    using System;
+
+      namespace MyApplication
+    {
+    class Program
+    {
+    static void Main(string[] args)
+    {
+      try
+      {
+        int[] myNumbers = {1, 2, 3};
+        Console.WriteLine(myNumbers[10]);
+      }
+      catch (Exception e)
+      {
+        Console.WriteLine(e.Message);
+      }    
+    }
+    }
+    }
+>* Output:
+ 
+     Index was outside the bounds of the array.
+>* Example 2:
+ 
+     using System;
+
+      namespace MyApplication
+     {
+    class Program
+    {
+    static void Main(string[] args)
+    {
+      try
+      {
+        int[] myNumbers = {1, 2, 3};
+        Console.WriteLine(myNumbers[10]);
+      }
+      catch (Exception e)
+      {
+        Console.WriteLine("Something went wrong.");
+      }    
+    }
+    }
+    }
+>* Output:
+ 
+     Something went wrong.
+>* Example 3:
+ 
+    using System;
+
+    namespace MyApplication
+    {
+     class Program
+    {
+    static void Main(string[] args)
+    {
+      try
+      {
+        int[] myNumbers = {1, 2, 3};
+        Console.WriteLine(myNumbers[10]);
+      }
+      catch (Exception e)
+      {
+        Console.WriteLine("Something went wrong.");
+      }  
+      finally
+      {
+        Console.WriteLine("The 'try catch' is finished.");
+      }  
+    }
+    }
+    }
+>* Output:
+       
+        Something went wrong.
+      The 'try catch' is finished.
+
 
