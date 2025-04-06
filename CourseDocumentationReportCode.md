@@ -300,8 +300,8 @@ You can use these conditions to perform different actions for different decision
 
 >*  Output:
   
-    Bonjour
-    Namaste
+    Welcome
+    Good-Bye!
     Entered value is: 2
 
 >* Example:
