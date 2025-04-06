@@ -286,10 +286,10 @@ You can use these conditions to perform different actions for different decision
 			Console.WriteLine("Hello"); 
 			goto default; 
 		case 2: 
-			Console.WriteLine("Bonjour"); 
+			Console.WriteLine("Welcome"); 
 			goto case 3; 
 		case 3: 
-			Console.WriteLine("Namaste"); 
+			Console.WriteLine("Good-Bye!"); 
 			goto default; 
 		default: 
 			Console.WriteLine("Entered value is: " + greeting); 
