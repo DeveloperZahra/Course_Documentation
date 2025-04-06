@@ -183,7 +183,7 @@ Processing Time, Memory Usage, Splitting into subproblems, Reusability.
       
    3. *__Output:__* The algorithm must specify what kind of output will be obtained as a result of the operation and how this output will be presented.
       
-   4.* __Accuracy:__* The algorithm must fully and accurately describe the operations required to produce the correct results.
+   4. *__Accuracy:__* The algorithm must fully and accurately describe the operations required to produce the correct results.
    
    5. *__Efficiency:__* The working of the algorithm should be designed to solve the given problem as soon as possible.
       
