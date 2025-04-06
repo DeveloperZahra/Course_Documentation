@@ -15,7 +15,7 @@ There are 2 floating point data types which contain the decimal point:
 
 * _**Float:**_ It is 32-bit single-precision floating point type. It has 7 digit Precision. 
  To initialize a float variable, use the suffix f or F. Like, float x = 3.5F;. If the suffix F or f will not use then it is treated as double.
-* **Double:**_It is 64-bit double-precision floating point type. It has 14 – 15 digit Precision. 
+* **Double:**_It is 64-bit double-precision floating point type. It has 14 â€“ 15 digit Precision. 
  To initialize a double variable, use the suffix d or D. But it is not mandatory to use suffix because by default floating data types are the double type.
 
 > 1.3 Decimal Types:
@@ -102,7 +102,7 @@ But the programmer can easily write conversion code.
 2. _**Reference Data Types**_
 
 The Reference Data Types will contain a memory address of variable value because 
- the reference types won’t store the variable value directly in memory. 
+ the reference types wonâ€™t store the variable value directly in memory. 
  When you create a reference type variable, such as an object or a string, you are actually storing a reference (or pointer) to 
 the location in memory where the data is held. The actual data for reference types is stored on the heap. The heap is a large pool of memory used for dynamic memory allocation.
 The built-in reference types are string, object.
@@ -118,8 +118,8 @@ It represents a sequence of Unicode characters and its type name is System.Strin
 
 In C#, all types, predefined and user-defined, reference types and value types, 
 inherit directly or indirectly from Object. So basically it is the base class for all the data types in C#. 
-Before assigning values, it needs type conversion. When a variable of a value type is converted to object, it’s called boxing.
-When a variable of type object is converted to a value type, it’s called unboxing. Its type name is System.Object.
+Before assigning values, it needs type conversion. When a variable of a value type is converted to object, itâ€™s called boxing.
+When a variable of type object is converted to a value type, itâ€™s called unboxing. Its type name is System.Object.
 >* Example:
 
     // Using Reference data types
@@ -243,9 +243,9 @@ Operator|	Name|	Description|	Example
     }
 >* Output:
  
-     Addition: 15
-    Subtraction: 5
-    Multiplication: 50
+     Addition: 12
+    Subtraction: 4
+    Multiplication: 32
     Division: 2
     Modulo: 0
 -----------------------------------
@@ -620,7 +620,7 @@ Array index is to be increased by 1 in sequence whenever its not reach the array
 
 
 
-* Note : Only Declaration of an array doesn’t allocate memory to the array. For that array must be initialized.
+* Note : Only Declaration of an array doesnâ€™t allocate memory to the array. For that array must be initialized.
 
 
 >* Array Initialization:
@@ -719,14 +719,14 @@ mathematical operations to string manipulation, array handling, and more.
   
 The Math class provides various mathematical functions.
 
-• Math.Abs: Returns the absolute value of a number.
+â€¢ Math.Abs: Returns the absolute value of a number.
 
         int value = -10; 
         int absoluteValue = Math.Abs(value); // absoluteValue = 10 
-• Math.Pow: Raises a number to a specified power. 
+â€¢ Math.Pow: Raises a number to a specified power. 
 
         double result = Math.Pow(2, 3); // result = 8 
-• Math.Sqrt: Returns the square root of a number. 
+â€¢ Math.Sqrt: Returns the square root of a number. 
 
        double squareRoot = Math.Sqrt(16); // squareRoot = 4 
 * Math.Round:  a floating-point number to the nearest integer or specified number of decimal places. 
@@ -736,7 +736,7 @@ The Math class provides various mathematical functions.
   
   The String class provides methods to manipulate strings. 
 
-  • string.Length: Gets the length of a string. 
+  â€¢ string.Length: Gets the length of a string. 
 
       string message = "Hello, world!"; 
     int length = message.Length; // length = 13 
@@ -747,7 +747,7 @@ The Math class provides various mathematical functions.
 * string.Contains: Determines whether a string contains a specified substring. 
 
            bool contains = message.Contains("world"); // contains = true 
-• string.Split: Splits a string into an array of substrings based on a delimiter.
+â€¢ string.Split: Splits a string into an array of substrings based on a delimiter.
 
            string[] words = message.Split(' '); // words = ["Hello,", "world!"] 
 
@@ -757,7 +757,7 @@ The DateTime class provides functions to work with dates and times.
    * DateTime.Now: Gets the current date and time. 
    
                   DateTime now = DateTime.Now; 
-• DateTime.Today: Gets the current date with the time component set to 00:00:00.
+â€¢ DateTime.Today: Gets the current date with the time component set to 00:00:00.
 
                   DateTime today = DateTime.Today
 * DateTime.ToString: Converts the date and time to a string in a specified format. 
@@ -768,14 +768,14 @@ The DateTime class provides functions to work with dates and times.
    
    C# arrays have several built-in methods. 
 
-• Array.Sort: Sorts the elements of an array. 
+â€¢ Array.Sort: Sorts the elements of an array. 
 
               int[] numbers = { 3, 1, 4, 1, 5 }; 
                Array.Sort(numbers); // numbers = { 1, 1, 3, 4, 5 } 
-• Array.Reverse: Reverses the sequence of the elements in an array. 
+â€¢ Array.Reverse: Reverses the sequence of the elements in an array. 
 
               Array.Reverse(numbers); // numbers = { 5, 4, 3, 1, 1 } 
-• Array.IndexOf: Searches for the specified object and returns the index of its first occurrence 
+â€¢ Array.IndexOf: Searches for the specified object and returns the index of its first occurrence 
 in an array. 
 
            int index = Array.IndexOf(numbers, 4); // index = 1
@@ -783,34 +783,34 @@ in an array.
   
 The Console class is used for basic input/output operations. 
 
-• Console.WriteLine: Writes the specified data, followed by the current line terminator, to the 
+â€¢ Console.WriteLine: Writes the specified data, followed by the current line terminator, to the 
 console. 
 
            Console.WriteLine("Hello, world!"); 
-• Console.Write: Writes the specified data to the console without appending a new line.
+â€¢ Console.Write: Writes the specified data to the console without appending a new line.
 
             Console.Write("Enter your name: "); 
-• Console.ReadLine: Reads the next line of characters from the standard input stream. 
+â€¢ Console.ReadLine: Reads the next line of characters from the standard input stream. 
 
             string name = Console.ReadLine();
 > 6. Type Conversion Functions:
   
 C# provides several built-in methods for converting between types. 
 
-• Convert.ToInt32: Converts a specified value to a 32-bit signed integer. 
+â€¢ Convert.ToInt32: Converts a specified value to a 32-bit signed integer. 
 
            string numberString = "123"; 
            int number = Convert.ToInt32(numberString); // number = 123 
-• Convert.ToDouble: Converts a specified value to a double-precision floating-point number. 
+â€¢ Convert.ToDouble: Converts a specified value to a double-precision floating-point number. 
 
               string doubleString = "123.45"; 
               double doubleNumber = Convert.ToDouble(doubleString); // doubleNumber = 123.45 
  
-• Convert.ToString: Converts a specified value to a string. 
+â€¢ Convert.ToString: Converts a specified value to a string. 
 
                int num = 123; 
          string numString = Convert.ToString(num); // numString = "123" 
-• int.Parse and int.TryParse: Convert a string representation of a number to its integer 
+â€¢ int.Parse and int.TryParse: Convert a string representation of a number to its integer 
 equivalent. 
 
              int parsedNumber = int.Parse("456"); // parsedNumber = 456 
@@ -819,12 +819,12 @@ equivalent.
   
 The Random class is used to generate random numbers.
 
-• Random.Next: Returns a random integer. 
+â€¢ Random.Next: Returns a random integer. 
 
           Random random = new Random(); 
             int randomNumber = random.Next(); // randomNumber = any integer 
             int randomInRange = random.Next(1, 10); // randomInRange = integer between 1 and 9 
-• Random.NextDouble: Returns a random floating-point number between 0.0 and 1.0 
+â€¢ Random.NextDouble: Returns a random floating-point number between 0.0 and 1.0 
 
            double randomDouble = random.NextDouble(); // randomDouble = value between 0.0 and 1.0
 -----------------------------------------------
