@@ -1,0 +1,132 @@
+
+--cartesian Product 
+Select st_fname,dept_name
+from student , Department
+
+Select st_fname,dept_name
+from student cross join Department
+-----------------------------------------------
+--equi join    --inner join 
+Select st_fname,dept_name
+from student , Department
+where Department.Dept_Id=Student.Dept_Id --start with PK , use =
+
+Select st_fname,dept_name,Dept_Id ---- why its show error?! 
+from student , Department
+where Department.Dept_Id=Student.Dept_Id
+
+
+
+--use alise name -----
+
+Select st_fname,dept_name
+from student S , Department D
+where D.Dept_Id=S.Dept_Id
+
+Select st_fname,D.*
+from student S , Department D
+where D.Dept_Id=S.Dept_Id
+
+Select st_fname,dept_name,D.dept_id
+from student S , Department D
+where D.Dept_Id=S.Dept_Id and st_address='alex'
+order by Dept_Name
+
+--we will rplace where with ON and we will used inner join key word 
+Select st_fname,dept_name
+from student S inner join Department D
+on D.Dept_Id=S.Dept_Id
+
+
+Select st_fname,dept_name  --in inner join ON act as --> where
+from student S inner join Department D
+on D.Dept_Id=S.Dept_Id and st_address='alex'
+
+--inner join --> it will not show me the data which is not matched 
+
+----------------left outer join----------------------------------------------------------
+
+Select st_fname,dept_name
+from student S left outer join Department D
+on D.Dept_Id=S.Dept_Id -- bring the result of inner join + left
+
+
+
+Select st_fname,dept_name
+from student S right outer join Department D
+on D.Dept_Id=S.Dept_Id --bring the result of inner join + right
+
+-- inner bring 13
+-- left bring 14
+-- right bring 16
+-- Q: full outer join will bring how many rows ?
+
+Select st_fname,dept_name
+from student S full outer join Department D
+on D.Dept_Id=S.Dept_Id
+
+---------------------------------------------------------------
+--Self join
+
+select X.St_fname as StudName,Y.St_fname as Supername ,  X.St_Address
+from Student X, Student Y --start from here
+where Y.St_Id=X.St_super
+
+---- MOHAMMED CASE -------------------------------
+
+select X.St_fname as StudName,Y.St_fname as Supername ,  X.St_Address
+from Student X, Student Y --start from here
+where X.St_Id=Y.St_super
+
+
+
+--------------------------------------------------------------------------
+
+
+select X.St_fname as StudName,Y.*
+from Student X, Student Y
+where Y.St_Id=X.St_super
+
+select X.St_fname as StudName,Y.*
+from Student X inner join Student Y
+on Y.St_Id=X.St_super
+
+ 
+--join + Multi tables-----------------------------------------
+-- i want to display the name of student and the name of the course-- there is no direct relationship
+
+Select st_fname,crs_name,grade
+
+from Student S, Stud_Course SC, Course C
+
+where S.St_Id=SC.St_Id   and C.Crs_Id=SC.Crs_Id -- عدد شروط الجوين اقل من عدد الجداول ب 1
+
+Select st_fname,crs_name,grade
+from Student S inner join Stud_Course SC
+	on S.St_Id=SC.St_Id   --اخذ التيبل الاول والثاني واسوي جوين والنتيجه اسوي لها جوين مع الثالث
+	inner join
+	Course C
+	on C.Crs_Id=SC.Crs_Id
+-- هذه اوضح ف القراءة على فكرة :)
+
+Select st_fname,crs_name,grade,dept_name
+from Student S inner join Stud_Course SC
+	on S.St_Id=SC.St_Id   
+	inner join
+	Course C
+	on C.Crs_Id=SC.Crs_Id
+	inner join
+	Department d
+	on d.Dept_Id=s.Dept_Id
+--------------------------------------------------
+--join + DML
+update Stud_Course
+	set grade+=10-- هنا هذه بروحها بيزود كل حد عادي بس انا مثلا اريد ازيد الي ف القاهره بس 
+	 from Student S , Stud_Course SC
+where s.St_Id=sc.St_Id and st_address='alex'
+
+----------------------------------so your job to search about how can we used joins with(insert,delete)------------ :)
+
+
+     
+
