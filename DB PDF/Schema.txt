@@ -1,0 +1,32 @@
+--DB Schema
+--Object    [SchemaName].ObjectName
+select * from Student
+
+Create schema HR
+
+Create Schema Sales
+
+alter schema HR transfer Student
+
+alter schema HR Transfer Instructor
+
+alter schema sales transfer Department
+
+select * from student
+
+select * from HR.student
+
+create table student
+(
+ id int,
+ name varchar(20)
+)
+
+select * from Student
+
+create table sales.student
+(
+ sid int,
+ sname varchar(20),
+ sage int
+)
