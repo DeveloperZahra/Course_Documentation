@@ -1,0 +1,178 @@
+use iti
+-------------------------------
+-------------------------------
+--Subquery
+select *
+from Student
+where st_age< avg(St_Age)
+
+select *
+from Student
+where st_age<(select avg(St_Age) from student)
+
+select *,(select count(st_id) from Student)
+from student
+
+
+------------------------------------------------------------------------------------------
+--Union family
+--union all    union      except   intersect
+------------------------------------------------------------------------------------------
+--Batch
+select st_fname as names
+from Student
+union all
+select ins_name
+from Instructor
+
+select st_fname,st_id
+from Student
+union all
+select ins_name,ins_id
+from Instructor
+
+
+select st_fname 
+from Student
+union 
+select ins_name
+from Instructor
+
+select st_fname 
+from Student
+intersect 
+select ins_name
+from Instructor
+
+select st_fname 
+from Student
+except
+select ins_name
+from Instructor
+------------------------------------------------------
+--Data Types
+--------------------Numermic DT-----------------------
+bit  --bool   false:true   0:1
+tinyint 1 Byte  -128:+127  unsigned  0:255
+smallint 2B   -32768 : +32767   unsigned 0:65500
+int      4B
+bigint   8B
+
+--------------------String DT  & Character DT
+char(10)    [Fixed Length characters]  ahmed 10   ali 10  على ؟؟
+varchar(10) [variable length characters] ahmed 5   ali 3
+nchar(10) unicode على على  
+nvarchar(10)
+nvarchar(max) cccccccccccccccccccccc    up to 2GB
+
+--------------------Binary DT
+binary    011101  111100
+image
+
+----------------------------------------------
+
+select  st_fname+' '+st_lname as fullname
+from Student
+order by fullname
+
+select  st_fname+' '+st_lname as fullname
+from Student
+where fullname='ahmed ali'
+
+select  st_fname+' '+st_lname as fullname
+from Student
+where st_fname+' '+st_lname='ahmed ali'
+
+select *
+from	(select  st_fname+' '+st_lname as fullname
+		 from Student) as newtable
+where fullname='ahmed ali'
+
+--from
+--join
+--on
+--where 
+--group
+--having
+--select
+--order by
+
+
+drop table test           ---data  & Metadata
+
+delete from test            ------data
+where
+
+truncate table test          ------data
+
+.ldf     .mdf
+
+--Batch  Script   Transaction
+
+insert
+update
+delete
+
+---script-----
+insert
+go
+update
+
+create table
+go --DDL
+drop table
+
+--what is the different between script and backup?
+
+-------transaction------------
+create table parent (pid int primary key)
+
+create table child(cid int foreign key references parent(pid))
+
+insert into parent values(1)
+insert into parent values(2)
+insert into parent values(3)
+insert into parent values(4)
+
+
+begin transaction
+	insert into child values(1)
+	insert into child values(2)
+	insert into child values(3)
+Rollback
+ 
+ select * from child 
+
+begin transaction
+	insert into child values(1)
+	insert into child values(10)
+	insert into child values(3)
+commit   --1,3---
+
+select * from child
+truncate table child
+
+begin try
+	begin transaction
+	insert into child values(1)
+	insert into child values(200)
+	insert into child values(3)
+	commit
+end try
+begin catch
+	ROLLBACK 
+	select ERROR_LINE() ,ERROR_MESSAGE(), ERROR_NUMBER()
+end catch
+
+begin transaction
+	insert
+	truncate
+	update
+	delete
+--------ACID---------------
+
+
+
+
+
+
