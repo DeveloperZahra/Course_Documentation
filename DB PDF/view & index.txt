@@ -1,0 +1,48 @@
+
+use ITI
+--Clustered ----- PK
+create clustered index myindex
+on student(st_fname)
+
+create nonclustered index myindex
+on student(st_fname)
+
+create nonclustered index myindex2
+on student(st_Lname)
+
+--Primary key   --> Constraint --> Clustered Index
+--Unique        --> Constraint --> nonclutered index
+--SQL Server Profiler --> catch query
+--SQLserver tune advisor--> take the output of the trace 
+ select * from Student where St_Age=20
+
+-------views-----------------------
+--view
+--can't take parameters
+
+--IS A select statment
+--•	Simplify construction of complex queries
+--•	Specify user view
+--•	Limit access to data [grant revoke]
+--•	Hide names of database objects [table name and columns]
+--•	increase performance (only Index and partitioned view)
+
+--types of views
+--Standard view
+--partitioned view -- uninon
+--indexed views
+
+create view Vstud
+as
+	select *
+	from student
+-------------------------------------
+select * from Vstud
+-----------------------------------
+sp_helptext Vtry -- يعطينا كل الكود الي كتبها
+
+--ENCRYPTED VIEW
+CREATE VIEW Vtry
+WITH ENCRYPTION -- encription for the code only not data
+AS
+SELECT * FROM Student
