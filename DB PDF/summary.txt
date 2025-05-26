@@ -1,0 +1,20 @@
+Write a summary report representing your own understanding on the following topics and cover the requested points:
+A- Software Development Life cycle:
+1- State all the SDLC phases: explain each phase, its role in software development and its input & output
+2- state all the roles / titles that you know in the SDLC, their responsibilities and tools that they used if any
+------------------------------------------------------------------------------------------------------------------------------
+B- Agile and Scrum
+1- explain the agile methodology of working and its purposes
+2- compare between agile and waterfall models : advantage, disadvantage, when to use it, best practice of both
+3- state all the frameworks that you know are used for implementing agile
+4- explain in detail the scrum framework for agile : timing, meetings, roles
+------------------------------------------------------------------------------------------------------------------------------
+C- web development stacks
+1- state all the web application parts and services
+2- state all the web stacks that you know and compare between them : where to use, when to use, features
+3- state all the tools of development that are used in .Net stack
+------------------------------------------------------------------------------------------------------------------------------
+D- Git version control
+1- explain in detail the git version control system explaining why and when we use it and all the related terms
+2- mention all the cloud repositories that uses git version control and compare between them
+3- state all the commands that you know with the explaining of each function of them
